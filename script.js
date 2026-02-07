@@ -347,6 +347,21 @@ const translations = {
             searchPlaceholder: '🔍 Suchen...',
             selectPresetPlaceholder: 'Voreinstellung wählen...'
         },
+        content: {
+            contentTitle: 'Was ist der Minecraft Befehlsgenerator?',
+            contentDesc: 'Dieses Tool ermöglicht es Minecraft-Spielern, komplexe <strong>/give</strong>-Befehle in Sekunden zu erstellen. Kein Kampf mehr mit langen Codes in Befehlsblöcken oder im Chat. Ob Netherite-Schwert für Version <strong>1.21</strong> oder Diamant-Sets für <strong>1.8</strong>; MC AI Befehlsgenerator erfüllt alle Bedürfnisse.',
+            featuresTitle: 'Funktionen',
+            feature1: '✨ <strong>Benutzerdefinierte Namen und Lore:</strong> Füge deinen Gegenständen farbige Namen und Beschreibungen hinzu.',
+            feature2: '🔥 <strong>Unbegrenzte Verzauberungen:</strong> Gehe über Vanilla-Grenzen hinaus wie Schärfe 1000, Effizienz 32767.',
+            feature3: '🛡️ <strong>Unzerstörbar:</strong> Erstelle "Unzerstörbare" Gegenstände, die niemals kaputtgehen.',
+            feature4: '⚡ <strong>OP Item Sets:</strong> Erhalte die stärksten Gegenstände mit einem Klick durch "Master Set".',
+            feature5: '🌍 <strong>Mehrsprachiger Support:</strong> Nutze es auf Türkisch, Englisch, Deutsch und 10+ Sprachen.',
+            guideTitle: 'Wie macht man ein OP-Schwert in Minecraft?',
+            guideStep1: '1. <strong>Item Wählen:</strong> Wähle "Diamantschwert" oder "Netherite-Schwert" aus der Liste.',
+            guideStep2: '2. <strong>Verzauberung Hinzufügen:</strong> Wähle "Schärfe" und setze das Level auf 255 (oder höher).',
+            guideStep3: '3. <strong>Unzerstörbar Machen:</strong> Aktiviere das "Unzerstörbar"-Kästchen.',
+            guideStep4: '4. <strong>Kopieren:</strong> Kopiere den generierten Befehl und füge ihn im Spiel in einen Befehlsblock ein.'
+        },
         targets: {
             s: '@s (Selbst)',
             p: '@p (Nächster)',
@@ -486,6 +501,21 @@ const translations = {
             unbreakableLabel: 'Indestructible',
             searchPlaceholder: '🔍 Buscar...',
             selectPresetPlaceholder: 'Seleccionar preajuste...'
+        },
+        content: {
+            contentTitle: '¿Qué es el Generador de Comandos de Minecraft?',
+            contentDesc: 'Esta herramienta permite a los jugadores de Minecraft generar comandos complejos <strong>/give</strong> en segundos. No más luchar con códigos largos en bloques de comandos o chat. Ya sea una espada de netherite para la versión <strong>1.21</strong> o sets de diamante para <strong>1.8</strong>; MC AI Command Generator responde a todas tus necesidades.',
+            featuresTitle: 'Características',
+            feature1: '✨ <strong>Nombres y Lore Personalizados:</strong> Añade nombres coloridos y descripciones a tus objetos.',
+            feature2: '🔥 <strong>Encantamientos Ilimitados:</strong> Ve más allá de los límites vanilla como Filo 1000, Eficiencia 32767.',
+            feature3: '🛡️ <strong>Indestructible:</strong> Crea objetos "Indestructibles" que nunca se rompen.',
+            feature4: '⚡ <strong>Sets de Objetos OP:</strong> Obtén los objetos más fuertes con un solo clic usando "Set Maestro".',
+            feature5: '🌍 <strong>Soporte Multi-Lenguaje:</strong> Úsalo en Turco, Inglés, Alemán y más de 10 idiomas.',
+            guideTitle: '¿Cómo hacer una Espada OP en Minecraft?',
+            guideStep1: '1. <strong>Seleccionar Objeto:</strong> Elige "Espada de Diamante" o "Espada de Netherite" de la lista.',
+            guideStep2: '2. <strong>Añadir Encantamiento:</strong> Selecciona "Filo" (Sharpness) y establece el nivel en 255 (o más).',
+            guideStep3: '3. <strong>Hacer Indestructible:</strong> Marca la casilla "Indestructible".',
+            guideStep4: '4. <strong>Copiar:</strong> Copia el comando generado y pégalo en un bloque de comandos en el juego.'
         },
         targets: {
             s: '@s (Sí mismo)',
@@ -627,6 +657,21 @@ const translations = {
             searchPlaceholder: '🔍 Rechercher...',
             selectPresetPlaceholder: 'Sélectionner un préréglage...'
         },
+        content: {
+            contentTitle: 'Qu\'est-ce que le Générateur de Commandes Minecraft ?',
+            contentDesc: 'Cet outil permet aux joueurs de Minecraft de générer des commandes <strong>/give</strong> complexes en quelques secondes. Plus besoin de lutter avec de longs codes dans les blocs de commande ou le chat. Que ce soit une épée en netherite pour la version <strong>1.21</strong> ou des sets en diamant pour la <strong>1.8</strong>; MC AI Command Generator répond à tous vos besoins.',
+            featuresTitle: 'Fonctionnalités',
+            feature1: '✨ <strong>Nom et Lore Personnalisés:</strong> Ajoutez des noms colorés et des descriptions à vos objets.',
+            feature2: '🔥 <strong>Enchantements Illimités:</strong> Dépassez les limites vanilla comme Tranchant 1000, Efficacité 32767.',
+            feature3: '🛡️ <strong>Indestructible:</strong> Créez des objets "Indestructibles" qui ne se cassent jamais.',
+            feature4: '⚡ <strong>Sets d\'Objets OP:</strong> Obtenez les objets les plus puissants en un clic avec "Set Maître".',
+            feature5: '🌍 <strong>Support Multi-Langue:</strong> Utilisez en Turc, Anglais, Allemand et plus de 10 langues.',
+            guideTitle: 'Comment faire une Épée OP dans Minecraft ?',
+            guideStep1: '1. <strong>Choisir l\'Objet:</strong> Sélectionnez "Épée en Diamant" ou "Épée en Netherite" dans la liste.',
+            guideStep2: '2. <strong>Ajouter Enchantement:</strong> Sélectionnez "Tranchant" (Sharpness) et réglez le niveau à 255 (ou plus).',
+            guideStep3: '3. <strong>Rendre Indestructible:</strong> Cochez la case "Indestructible".',
+            guideStep4: '4. <strong>Copier:</strong> Copiez la commande générée et collez-la dans un bloc de commande en jeu.'
+        },
         targets: {
             s: '@s (Soi-même)',
             p: '@p (Le plus proche)',
@@ -766,6 +811,21 @@ const translations = {
             unbreakableLabel: 'Indistruttibile',
             searchPlaceholder: '🔍 Cerca...',
             selectPresetPlaceholder: 'Seleziona un preset...'
+        },
+        content: {
+            contentTitle: 'Cos\'è il Generatore di Comandi Minecraft?',
+            contentDesc: 'Questo strumento permette ai giocatori di Minecraft di generare comandi <strong>/give</strong> complessi in pochi secondi. Basta lottare con codici lunghi nei command block o in chat. Che sia una spada in netherite per la versione <strong>1.21</strong> o set in diamante per la <strong>1.8</strong>; MC AI Command Generator risponde a tutte le tue esigenze.',
+            featuresTitle: 'Caratteristiche',
+            feature1: '✨ <strong>Nomi e Lore Personalizzati:</strong> Aggiungi nomi colorati e descrizioni ai tuoi oggetti.',
+            feature2: '🔥 <strong>Incantesimi Illimitati:</strong> Vai oltre i limiti vanilla come Affilatezza 1000, Efficienza 32767.',
+            feature3: '🛡️ <strong>Indistruttibile:</strong> Crea oggetti "Indistruttibili" che non si rompono mai.',
+            feature4: '⚡ <strong>Set Oggetti OP:</strong> Ottieni gli oggetti più forti con un clic usando "Set Master".',
+            feature5: '🌍 <strong>Supporto Multi-Lingua:</strong> Usa in Turco, Inglese, Tedesco e oltre 10 lingue.',
+            guideTitle: 'Come fare una Spada OP in Minecraft?',
+            guideStep1: '1. <strong>Seleziona Oggetto:</strong> Scegli "Spada di Diamante" o "Spada di Netherite" dalla lista.',
+            guideStep2: '2. <strong>Aggiungi Incantesimo:</strong> Seleziona "Affilatezza" (Sharpness) e imposta il livello a 255 (o più).',
+            guideStep3: '3. <strong>Rendi Indistruttibile:</strong> Spunta la casella "Indistruttibile".',
+            guideStep4: '4. <strong>Copia:</strong> Copia il comando generato e incollalo in un command block nel gioco.'
         },
         targets: {
             s: '@s (Se stesso)',
@@ -907,6 +967,21 @@ const translations = {
             searchPlaceholder: '🔍 Pesquisar...',
             selectPresetPlaceholder: 'Selezionar predefinição...'
         },
+        content: {
+            contentTitle: 'O que é o Gerador de Comandos Minecraft?',
+            contentDesc: 'Esta ferramenta permite que jogadores de Minecraft gerem comandos <strong>/give</strong> complexos em segundos. Sem mais lutas com códigos longos em blocos de comando ou chat. Seja uma espada de netherite para a versão <strong>1.21</strong> ou sets de diamante para <strong>1.8</strong>; MC AI Command Generator atende a todas as suas necessidades.',
+            featuresTitle: 'Recursos',
+            feature1: '✨ <strong>Nome e Lore Personalizados:</strong> Adicione nomes coloridos e descrições aos seus itens.',
+            feature2: '🔥 <strong>Encantamentos Ilimitados:</strong> Vá além dos limites vanilla como Afiação 1000, Eficiência 32767.',
+            feature3: '🛡️ <strong>Indestrutível:</strong> Crie itens "Indestrutíveis" que nunca quebram.',
+            feature4: '⚡ <strong>Sets de Itens OP:</strong> Obtenha os itens mais fortes com um clique usando "Set Mestre".',
+            feature5: '🌍 <strong>Suporte Multi-Idioma:</strong> Use em Turco, Inglês, Alemão e mais de 10 idiomas.',
+            guideTitle: 'Como fazer uma Espada OP no Minecraft?',
+            guideStep1: '1. <strong>Selecionar Item:</strong> Escolha "Espada de Diamante" ou "Espada de Netherite" na lista.',
+            guideStep2: '2. <strong>Adicionar Encantamento:</strong> Selecione "Afiação" (Sharpness) e defina o nível para 255 (ou mais).',
+            guideStep3: '3. <strong>Tornar Indestrutível:</strong> Marque a caixa "Indestrutível".',
+            guideStep4: '4. <strong>Copiar:</strong> Copie o comando gerado e cole em um bloco de comando no jogo.'
+        },
         targets: {
             s: '@s (Si mesmo)',
             p: '@p (Mais próximo)',
@@ -1047,6 +1122,21 @@ const translations = {
             searchPlaceholder: '🔍 Поиск...',
             selectPresetPlaceholder: 'Выберите пресет...'
         },
+        content: {
+            contentTitle: 'Что такое Генератор Команд Minecraft?',
+            contentDesc: 'Этот инструмент позволяет игрокам Minecraft генерировать сложные команды <strong>/give</strong> за секунды. Больше не нужно мучиться с длинными кодами в командных блоках или чате. Будь то незеритовый меч для версии <strong>1.21</strong> или алмазные сеты для <strong>1.8</strong>; MC AI Command Generator отвечает всем вашим потребностям.',
+            featuresTitle: 'Особенности',
+            feature1: '✨ <strong>Кастомное Имя и Lore:</strong> Добавляйте цветные имена и описания к вашим предметам.',
+            feature2: '🔥 <strong>Неограниченные Зачарования:</strong> Выходите за пределы ванильных лимитов, такие как Острота 1000, Эффективность 32767.',
+            feature3: '🛡️ <strong>Неразрушимость:</strong> Создавайте "Неразрушимые" предметы, которые никогда не ломаются.',
+            feature4: '⚡ <strong>OP Сеты Предметов:</strong> Получите самые сильные предметы одним кликом, используя "Мастер Сет".',
+            feature5: '🌍 <strong>Мультиязычная Поддержка:</strong> Используйте на Турецком, Английском, Немецком и еще 10+ языках.',
+            guideTitle: 'Как сделать OP Меч в Minecraft?',
+            guideStep1: '1. <strong>Выберите Предмет:</strong> Выберите "Алмазный Меч" или "Незеритовый Меч" из списка.',
+            guideStep2: '2. <strong>Добавьте Зачарование:</strong> Выберите "Острота" (Sharpness) и установите уровень 255 (или выше).',
+            guideStep3: '3. <strong>Сделайте Неразрушимым:</strong> Отметьте галочку "Неразрушимость".',
+            guideStep4: '4. <strong>Копировать:</strong> Скопируйте сгенерированную команду и вставьте ее в командный блок в игре.'
+        },
         itemGroups: {
             weapons: 'Оружие',
             tools: 'Инструменты',
@@ -1159,6 +1249,21 @@ const translations = {
             unbreakableLabel: '破壊不可',
             searchPlaceholder: '🔍 検索...',
             selectPresetPlaceholder: 'プリセットを選択...'
+        },
+        content: {
+            contentTitle: 'Minecraft コマンド生成ツールとは？',
+            contentDesc: 'このツールを使用すると、Minecraftプレイヤーは複雑な <strong>/give</strong> コマンドを数秒で生成できます。コマンドブロックやチャットで長いコードと格闘する必要はもうありません。バージョン <strong>1.21</strong> のネザライトの剣でも、<strong>1.8</strong> のダイヤモンドセットでも、MC AI コマンドジェネレーターはすべてのニーズに応えます。',
+            featuresTitle: '特徴',
+            feature1: '✨ <strong>カスタム名と説明 (Lore):</strong> アイテムにカラフルな名前と説明を追加します。',
+            feature2: '🔥 <strong>無制限のエンチャント:</strong> ダメージ増加1000、効率強化32767など、バニラの制限を超えます。',
+            feature3: '🛡️ <strong>破壊不可:</strong> 決して壊れない「破壊不可」アイテムを作成します。',
+            feature4: '⚡ <strong>OPアイテムセット:</strong> 「マスターセット」を使用して、ワンクリックで最強のアイテムを入手します。',
+            feature5: '🌍 <strong>多言語サポート:</strong> トルコ語、英語、ドイツ語など10以上の言語で使用できます。',
+            guideTitle: 'MinecraftでOPの剣を作る方法は？',
+            guideStep1: '1. <strong>アイテム選択:</strong> リストから「ダイヤモンドの剣」または「ネザライトの剣」を選択します。',
+            guideStep2: '2. <strong>エンチャント追加:</strong> 「ダメージ増加」(Sharpness)を選択し、レベルを255（またはそれ以上）に設定します。',
+            guideStep3: '3. <strong>破壊不可にする:</strong> 「破壊不可」ボックスをチェックします。',
+            guideStep4: '4. <strong>コピー:</strong> 生成されたコマンドをコピーし、ゲーム内のコマンドブロックに貼り付けます。'
         },
         targets: {
             s: '@s (自分)',
@@ -1300,6 +1405,21 @@ const translations = {
             searchPlaceholder: '🔍 Search...',
             selectPresetPlaceholder: 'Select preset...'
         },
+        content: {
+            contentTitle: '마인크래프트 명령어 생성기란 무엇입니까?',
+            contentDesc: '이 도구를 사용하면 마인크래프트 플레이어가 복잡한 <strong>/give</strong> 명령어를 몇 초 만에 생성할 수 있습니다. 명령 블록이나 채팅에서 긴 코드와 씨름할 필요가 없습니다. 버전 <strong>1.21</strong>용 네더라이트 검이든 <strong>1.8</strong>용 다이아몬드 세트든; MC AI 명령어 생성기는 모든 요구 사항을 충족합니다.',
+            featuresTitle: '특징',
+            feature1: '✨ <strong>사용자 지정 이름 및 설명 (Lore):</strong> 아이템에 다채로운 이름과 설명을 추가하십시오.',
+            feature2: '🔥 <strong>무제한 마법 부여:</strong> 날카로움 1000, 효율 32767과 같은 바닐라 한계를 뛰어 넘으십시오.',
+            feature3: '🛡️ <strong>파괴 불가:</strong> 절대 부서지지 않는 "파괴 불가" 아이템을 만드십시오.',
+            feature4: '⚡ <strong>OP 아이템 세트:</strong> "마스터 세트"를 사용하여 한 번의 클릭으로 가장 강력한 아이템을 얻으십시오.',
+            feature5: '🌍 <strong>다국어 지원:</strong> 터키어, 영어, 독일어 및 10개 이상의 언어로 사용하십시오.',
+            guideTitle: '마인크래프트에서 OP 검을 만드는 방법?',
+            guideStep1: '1. <strong>아이템 선택:</strong> 목록에서 "다이아몬드 검" 또는 "네더라이트 검"을 선택하십시오.',
+            guideStep2: '2. <strong>마법 추가:</strong> "날카로움" (Sharpness)을 선택하고 레벨을 255 (또는 그 이상)로 설정하십시오.',
+            guideStep3: '3. <strong>파괴 불가 만들기:</strong> "파괴 불가" 상자를 체크하십시오.',
+            guideStep4: '4. <strong>복사:</strong> 생성된 명령어를 복사하여 게임의 명령 블록에 붙여넣으십시오.'
+        },
         itemGroups: {
             weapons: '무기',
             tools: '도구',
@@ -1412,6 +1532,21 @@ const translations = {
             unbreakableLabel: '不可破坏',
             searchPlaceholder: '🔍 搜索...',
             selectPresetPlaceholder: '选择预设...'
+        },
+        content: {
+            contentTitle: '什么是 Minecraft 指令生成器？',
+            contentDesc: '这个工具允许 Minecraft 玩家在几秒钟内生成复杂的 <strong>/give</strong> 指令。不再需要在命令方块或聊天中与长代码作斗争。无论是 <strong>1.21</strong> 版本的下界合金剑还是 <strong>1.8</strong> 的钻石套装；MC AI 指令生成器满足您的所有需求。',
+            featuresTitle: '特点',
+            feature1: '✨ <strong>自定义名称和说明 (Lore):</strong> 为您的物品添加多彩的名称和描述。',
+            feature2: '🔥 <strong>无限附魔:</strong> 突破原版限制，如锋利 1000、效率 32767。',
+            feature3: '🛡️ <strong>不可破坏:</strong> 制作永不损坏的“不可破坏”物品。',
+            feature4: '⚡ <strong>OP 物品套装:</strong> 使用“大师套装”一键获取最强物品。',
+            feature5: '🌍 <strong>多语言支持:</strong> 支持土耳其语、英语、德语等 10 多种语言。',
+            guideTitle: '如何在 Minecraft 中制作 OP 剑？',
+            guideStep1: '1. <strong>选择物品:</strong> 从列表中选择“钻石剑”或“下界合金剑”。',
+            guideStep2: '2. <strong>添加附魔:</strong> 选择“锋利” (Sharpness) 并将等级设置为 255（或更高）。',
+            guideStep3: '3. <strong>设为不可破坏:</strong> 勾选“不可破坏”框。',
+            guideStep4: '4. <strong>复制:</strong> 复制生成的指令并将其粘贴到游戏中的命令方块中。'
         },
         itemGroups: {
             weapons: '武器',
@@ -1553,6 +1688,21 @@ const translations = {
             searchPlaceholder: '🔍 Szukaj...',
             selectPresetPlaceholder: 'Wybierz zestaw...'
         },
+        content: {
+            contentTitle: 'Czym jest Generator Komend Minecraft?',
+            contentDesc: 'To narzędzie pozwala graczom Minecraft generować złożone komendy <strong>/give</strong> w kilka sekund. Koniec z zmaganiem się z długimi kodami w blokach poleceń lub na czacie. Czy to netheritowy miecz dla wersji <strong>1.21</strong>, czy diamentowe zestawy dla <strong>1.8</strong>; MC AI Generator Komend spełnia wszystkie Twoje potrzeby.',
+            featuresTitle: 'Funkcje',
+            feature1: '✨ <strong>Własna Nazwa i Opis (Lore):</strong> Dodaj kolorowe nazwy i opisy do swoich przedmiotów.',
+            feature2: '🔥 <strong>Nielimitowane Zaklęcia:</strong> Przekraczaj limity waniliowe, takie jak Ostrość 1000, Wydajność 32767.',
+            feature3: '🛡️ <strong>Niezniszczalność:</strong> Twórz "Niezniszczalne" przedmioty, które nigdy się nie psują.',
+            feature4: '⚡ <strong>Zestawy Przedmiotów OP:</strong> Zdobądź najsilniejsze przedmioty jednym kliknięciem za pomocą "Zestawu Mistrza".',
+            feature5: '🌍 <strong>Wsparcie Wielojęzyczne:</strong> Używaj w języku Tureckim, Angielskim, Niemieckim i ponad 10 innych.',
+            guideTitle: 'Jak zrobić Miecz OP w Minecraft?',
+            guideStep1: '1. <strong>Wybierz Przedmiot:</strong> Wybierz "Diamentowy Miecz" lub "Netheritowy Miecz" z listy.',
+            guideStep2: '2. <strong>Dodaj Zaklęcie:</strong> Wybierz "Ostrość" (Sharpness) i ustaw poziom na 255 (lub wyższy).',
+            guideStep3: '3. <strong>Zrób Niezniszczalny:</strong> Zaznacz pole "Niezniszczalny".',
+            guideStep4: '4. <strong>Kopiuj:</strong> Skopiuj wygenerowaną komendę i wklej ją do bloku poleceń w grze.'
+        },
         targets: {
             s: '@s (Sobie)',
             p: '@p (Najbliższy)',
@@ -1692,6 +1842,21 @@ const translations = {
             unbreakableLabel: 'Onverwoestbaar',
             searchPlaceholder: '🔍 Zoeken...',
             selectPresetPlaceholder: 'Selecteer preset...'
+        },
+        content: {
+            contentTitle: 'Wat is Minecraft Commando Generator?',
+            contentDesc: 'Met deze tool kunnen Minecraft-spelers binnen enkele seconden complexe <strong>/give</strong> commando\'s genereren. Geen gedoe meer met lange codes in commandoblokken of chat. Of je nu een netherite zwaard maakt voor versie <strong>1.21</strong> of diamanten sets voor <strong>1.8</strong>; MC AI Commando Generator beantwoordt aan al je behoeften.',
+            featuresTitle: 'Kenmerken',
+            feature1: '✨ <strong>Aangepaste Naam en Lore:</strong> Voeg kleurrijke namen en beschrijvingen toe aan je items.',
+            feature2: '🔥 <strong>Onbeperkte Betoveringen:</strong> Ga voorbij de vanilla limieten zoals Scherpte 1000, Efficiëntie 32767.',
+            feature3: '🛡️ <strong>Onverwoestbaar:</strong> Maak "Onverwoestbare" items die nooit breken.',
+            feature4: '⚡ <strong>OP Item Sets:</strong> Krijg de sterkste items met één klik met "Meester Set".',
+            feature5: '🌍 <strong>Meertalige Ondersteuning:</strong> Gebruik in het Turks, Engels, Duits en 10+ talen.',
+            guideTitle: 'Hoe maak je een OP Zwaard in Minecraft?',
+            guideStep1: '1. <strong>Selecteer Item:</strong> Kies "Diamanten Zwaard" of "Netherite Zwaard" uit de lijst.',
+            guideStep2: '2. <strong>Voeg Betovering Toe:</strong> Selecteer "Scherpte" (Sharpness) en zet het niveau op 255 (of hoger).',
+            guideStep3: '3. <strong>Maak Onverwoestbaar:</strong> Vink het vakje "Onverwoestbaar" aan.',
+            guideStep4: '4. <strong>Kopiëren:</strong> Kopieer het gegenereerde commando en plak het in een commandoblok in het spel.'
         },
         targets: {
             s: '@s (Zichzelf)',
@@ -1833,6 +1998,21 @@ const translations = {
             searchPlaceholder: '🔍 Sök...',
             selectPresetPlaceholder: 'Välj förinställning...'
         },
+        content: {
+            contentTitle: 'Vad är Minecraft Kommandogenerator?',
+            contentDesc: 'Detta verktyg låter Minecraft-spelare skapa komplexa <strong>/give</strong>-kommandon på några sekunder. Inget mer kämpande med långa koder i kommandblock eller chatt. Oavsett om du gör ett netherite-svärd för version <strong>1.21</strong> eller diamantset för <strong>1.8</strong>; MC AI Kommandogenerator svarar på alla dina behov.',
+            featuresTitle: 'Funktioner',
+            feature1: '✨ <strong>Anpassat Namn och Lore:</strong> Lägg till färgglada namn och beskrivningar till dina föremål.',
+            feature2: '🔥 <strong>Obegränsade Förtrollningar:</strong> Gå bortom vaniljgränser som Skärpa 1000, Effektivitet 32767.',
+            feature3: '🛡️ <strong>Oförstörbar:</strong> Skapa "Oförstörbara" föremål som aldrig går sönder.',
+            feature4: '⚡ <strong>OP Föremålsset:</strong> Få de starkaste föremålen med ett klick med "Mästarset".',
+            feature5: '🌍 <strong>Flerspråksstöd:</strong> Använd på Turkiska, Engelska, Tyska och 10+ språk.',
+            guideTitle: 'Hur man gör ett OP-svärd i Minecraft?',
+            guideStep1: '1. <strong>Välj Föremål:</strong> Välj "Diamantsvärd" eller "Netherite-svärd" från listan.',
+            guideStep2: '2. <strong>Lägg till Förtrollning:</strong> Välj "Skärpa" (Sharpness) och sätt nivån till 255 (eller högre).',
+            guideStep3: '3. <strong>Gör Oförstörbar:</strong> Kryssa i rutan "Oförstörbar".',
+            guideStep4: '4. <strong>Kopiera:</strong> Kopiera det genererade kommandot och klistra in det i ett kommandblock i spelet.'
+        },
         targets: {
             s: '@s (Själv)',
             p: '@p (Närmaste)',
@@ -1972,6 +2152,21 @@ const translations = {
             unbreakableLabel: 'Άθραυστο',
             searchPlaceholder: '🔍 Αναζήτηση...',
             selectPresetPlaceholder: 'Επιλογή προεπιλογής...'
+        },
+        content: {
+            contentTitle: 'Τι είναι η Γεννήτρια Εντολών Minecraft;',
+            contentDesc: 'Αυτό το εργαλείο επιτρέπει στους παίκτες του Minecraft να δημιουργούν περίπλοκες εντολές <strong>/give</strong> σε δευτερόλεπτα. Δεν χρειάζεται πλέον να παλεύετε με μεγάλους κωδικούς σε μπλοκ εντολών ή στο chat. Είτε φτιάχνετε ένα σπαθί netherite για την έκδοση <strong>1.21</strong> είτε σετ διαμαντιών για την <strong>1.8</strong>; Η Γεννήτρια Εντολών MC AI καλύπτει όλες τις ανάγκες σας.',
+            featuresTitle: 'Χαρακτηριστικά',
+            feature1: '✨ <strong>Προσαρμοσμένο Όνομα και Lore:</strong> Προσθέστε πολύχρωμα ονόματα και περιγραφές στα αντικείμενά σας.',
+            feature2: '🔥 <strong>Απεριόριστες Μαγείες:</strong> Ξεπεράστε τα όρια του vanilla όπως Κοφτερότητα 1000, Αποδοτικότητα 32767.',
+            feature3: '🛡️ <strong>Άθραυστο:</strong> Φτιάξτε "Άθραυστα" αντικείμενα που δεν σπάνε ποτέ.',
+            feature4: '⚡ <strong>Σετ Αντικειμένων OP:</strong> Αποκτήστε τα ισχυρότερα αντικείμενα με ένα κλικ χρησιμοποιώντας το "Master Set".',
+            feature5: '🌍 <strong>Υποστήριξη Πολλαπλών Γλωσσών:</strong> Χρησιμοποιήστε το σε Τουρκικά, Αγγλικά, Γερμανικά και 10+ γλώσσες.',
+            guideTitle: 'Πώς να φτιάξετε ένα OP Σπαθί στο Minecraft?',
+            guideStep1: '1. <strong>Επιλογή Αντικειμένου:</strong> Επιλέξτε "Διαμαντένιο Σπαθί" ή "Σπαθί Netherite" από τη λίστα.',
+            guideStep2: '2. <strong>Προσθήκη Μαγείας:</strong> Επιλέξτε "Κοφτερότητα" (Sharpness) και ορίστε το επίπεδο στο 255 (ή υψηλότερα).',
+            guideStep3: '3. <strong>Κάντε το Άθραυστο:</strong> Επιλέξτε το κουτί "Άθραυστο".',
+            guideStep4: '4. <strong>Αντιγραφή:</strong> Αντιγράψτε την παραγόμενη εντολή και επικολλήστε την σε ένα μπλοκ εντολών στο παιχνίδι.'
         },
         targets: {
             s: '@s (Εαυτός)',
