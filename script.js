@@ -13,6 +13,10 @@ const translations = {
             customNameLabel: 'Eşya İsmi',
             customNamePlaceholder: 'Örn: Ejderha Kılıcı',
             nameColorLabel: 'Renk',
+            footerPrivacy: 'Gizlilik Politikası',
+            footerTerms: 'Kullanım Şartları',
+            footerContact: 'İletişim',
+            footerCopyright: '© 2024 MC AI Command Generator. Tüm hakları saklıdır. Mojang Studios ile bağlantısı yoktur.',
             boldLabel: 'Kalın',
             italicLabel: 'İtalik',
             loreLabel: 'Açıklama (Lore)',
@@ -190,7 +194,11 @@ const translations = {
             displaySettingsTitle: 'Display Settings',
             versionSelectLabel: 'Game Version',
             versionOld: '1.20.4 and Below',
-            versionNew: '1.20.5 and Above'
+            versionNew: '1.20.5 and Above',
+            footerPrivacy: 'Privacy Policy',
+            footerTerms: 'Terms of Service',
+            footerContact: 'Contact',
+            footerCopyright: '© 2024 MC AI Command Generator. All rights reserved. Not affiliated with Mojang Studios.'
         },
         content: {
             contentTitle: 'What is Minecraft Command Generator?',
@@ -345,7 +353,11 @@ const translations = {
             targetPlaceholder: 'Spielername',
             unbreakableLabel: 'Unzerstörbar',
             searchPlaceholder: '🔍 Suchen...',
-            selectPresetPlaceholder: 'Voreinstellung wählen...'
+            selectPresetPlaceholder: 'Voreinstellung wählen...',
+            footerPrivacy: 'Datenschutzerklärung',
+            footerTerms: 'Nutzungsbedingungen',
+            footerContact: 'Kontakt',
+            footerCopyright: '© 2024 MC AI Befehlsgenerator. Alle Rechte vorbehalten. Nicht verbunden mit Mojang Studios.'
         },
         content: {
             contentTitle: 'Was ist der Minecraft Befehlsgenerator?',
@@ -500,7 +512,11 @@ const translations = {
             targetPlaceholder: 'Nombre del Jugador',
             unbreakableLabel: 'Indestructible',
             searchPlaceholder: '🔍 Buscar...',
-            selectPresetPlaceholder: 'Seleccionar preajuste...'
+            selectPresetPlaceholder: 'Seleccionar preajuste...',
+            footerPrivacy: 'Política de Privacidad',
+            footerTerms: 'Términos de Servicio',
+            footerContact: 'Contacto',
+            footerCopyright: '© 2024 MC AI Generador de Comandos. Todos los derechos reservados. No afiliado con Mojang Studios.'
         },
         content: {
             contentTitle: '¿Qué es el Generador de Comandos de Minecraft?',
@@ -655,7 +671,11 @@ const translations = {
             targetPlaceholder: 'Nom du Joueur',
             unbreakableLabel: 'Indestructible',
             searchPlaceholder: '🔍 Rechercher...',
-            selectPresetPlaceholder: 'Sélectionner un préréglage...'
+            selectPresetPlaceholder: 'Sélectionner un préréglage...',
+            footerPrivacy: 'Politique de Confidentialité',
+            footerTerms: 'Conditions d\'Utilisation',
+            footerContact: 'Contact',
+            footerCopyright: '© 2024 MC AI Générateur de Commandes. Tous droits réservés. Non affilié à Mojang Studios.'
         },
         content: {
             contentTitle: 'Qu\'est-ce que le Générateur de Commandes Minecraft ?',
@@ -810,7 +830,11 @@ const translations = {
             targetPlaceholder: 'Nome Giocatore',
             unbreakableLabel: 'Indistruttibile',
             searchPlaceholder: '🔍 Cerca...',
-            selectPresetPlaceholder: 'Seleziona un preset...'
+            selectPresetPlaceholder: 'Seleziona un preset...',
+            footerPrivacy: 'Informativa sulla Privacy',
+            footerTerms: 'Termini di Servizio',
+            footerContact: 'Contatti',
+            footerCopyright: '© 2024 MC AI Generatore di Comandi. Tutti i diritti riservati. Non affiliato con Mojang Studios.'
         },
         content: {
             contentTitle: 'Cos\'è il Generatore di Comandi Minecraft?',
@@ -965,7 +989,11 @@ const translations = {
             targetPlaceholder: 'Nome do Jogador',
             unbreakableLabel: 'Indestrutível',
             searchPlaceholder: '🔍 Pesquisar...',
-            selectPresetPlaceholder: 'Selezionar predefinição...'
+            selectPresetPlaceholder: 'Selezionar predefinição...',
+            footerPrivacy: 'Política de Privacidade',
+            footerTerms: 'Termos de Serviço',
+            footerContact: 'Contato',
+            footerCopyright: '© 2024 MC AI Gerador de Comandos. Todos os direitos reservados. Não afiliado à Mojang Studios.'
         },
         content: {
             contentTitle: 'O que é o Gerador de Comandos Minecraft?',
@@ -1120,7 +1148,11 @@ const translations = {
             targetPlaceholder: 'Имя Игрока',
             unbreakableLabel: 'Неразрушимость',
             searchPlaceholder: '🔍 Поиск...',
-            selectPresetPlaceholder: 'Выберите пресет...'
+            selectPresetPlaceholder: 'Выберите пресет...',
+            footerPrivacy: 'Политика Конфиденциальности',
+            footerTerms: 'Условия Использования',
+            footerContact: 'Контакты',
+            footerCopyright: '© 2024 MC AI Генератор Команд. Все права защищены. Не связан с Mojang Studios.'
         },
         content: {
             contentTitle: 'Что такое Генератор Команд Minecraft?',
@@ -1248,7 +1280,11 @@ const translations = {
             targetPlaceholder: 'プレイヤー名',
             unbreakableLabel: '破壊不可',
             searchPlaceholder: '🔍 検索...',
-            selectPresetPlaceholder: 'プリセットを選択...'
+            selectPresetPlaceholder: 'プリセットを選択...',
+            footerPrivacy: 'プライバシーポリシー',
+            footerTerms: '利用規約',
+            footerContact: 'お問い合わせ',
+            footerCopyright: '© 2024 MC AI Command Generator. 全著作権所有。Mojang Studiosとは関係ありません。'
         },
         content: {
             contentTitle: 'Minecraft コマンド生成ツールとは？',
@@ -1403,7 +1439,11 @@ const translations = {
             targetPlaceholder: 'Player Name',
             unbreakableLabel: 'Unbreakable',
             searchPlaceholder: '🔍 Search...',
-            selectPresetPlaceholder: 'Select preset...'
+            selectPresetPlaceholder: 'Select preset...',
+            footerPrivacy: '개인정보 처리방침',
+            footerTerms: '서비스 약관',
+            footerContact: '문의하기',
+            footerCopyright: '© 2024 MC AI Command Generator. 판권 소유. Mojang Studios와 관련 없음.'
         },
         content: {
             contentTitle: '마인크래프트 명령어 생성기란 무엇입니까?',
@@ -1531,7 +1571,11 @@ const translations = {
             targetPlaceholder: '玩家名称',
             unbreakableLabel: '不可破坏',
             searchPlaceholder: '🔍 搜索...',
-            selectPresetPlaceholder: '选择预设...'
+            selectPresetPlaceholder: '选择预设...',
+            footerPrivacy: '隐私政策',
+            footerTerms: '服务条款',
+            footerContact: '联系我们',
+            footerCopyright: '© 2024 MC AI Command Generator. 版权所有。与 Mojang Studios 无关。'
         },
         content: {
             contentTitle: '什么是 Minecraft 指令生成器？',
@@ -1686,7 +1730,11 @@ const translations = {
             targetPlaceholder: 'Nazwa Gracza',
             unbreakableLabel: 'Niezniszczalny',
             searchPlaceholder: '🔍 Szukaj...',
-            selectPresetPlaceholder: 'Wybierz zestaw...'
+            selectPresetPlaceholder: 'Wybierz zestaw...',
+            footerPrivacy: 'Polityka Prywatności',
+            footerTerms: 'Warunki Użytkowania',
+            footerContact: 'Kontakt',
+            footerCopyright: '© 2024 MC AI Generator Komend. Wszelkie prawa zastrzeżone. Niepowiązane z Mojang Studios.'
         },
         content: {
             contentTitle: 'Czym jest Generator Komend Minecraft?',
@@ -1841,7 +1889,11 @@ const translations = {
             targetPlaceholder: 'Spelersnaam',
             unbreakableLabel: 'Onverwoestbaar',
             searchPlaceholder: '🔍 Zoeken...',
-            selectPresetPlaceholder: 'Selecteer preset...'
+            selectPresetPlaceholder: 'Selecteer preset...',
+            footerPrivacy: 'Privacybeleid',
+            footerTerms: 'Servicevoorwaarden',
+            footerContact: 'Contact',
+            footerCopyright: '© 2024 MC AI Commando Generator. Alle rechten voorbehouden. Niet gelieerd aan Mojang Studios.'
         },
         content: {
             contentTitle: 'Wat is Minecraft Commando Generator?',
@@ -1996,7 +2048,11 @@ const translations = {
             targetPlaceholder: 'Spelarnamn',
             unbreakableLabel: 'Oförstörbar',
             searchPlaceholder: '🔍 Sök...',
-            selectPresetPlaceholder: 'Välj förinställning...'
+            selectPresetPlaceholder: 'Välj förinställning...',
+            footerPrivacy: 'Integritetspolicy',
+            footerTerms: 'Användarvillkor',
+            footerContact: 'Kontakt',
+            footerCopyright: '© 2024 MC AI Kommandogenerator. Alla rättigheter förbehållna. Inte associerat med Mojang Studios.'
         },
         content: {
             contentTitle: 'Vad är Minecraft Kommandogenerator?',
@@ -2151,7 +2207,11 @@ const translations = {
             targetPlaceholder: 'Όνομα Παίκτη',
             unbreakableLabel: 'Άθραυστο',
             searchPlaceholder: '🔍 Αναζήτηση...',
-            selectPresetPlaceholder: 'Επιλογή προεπιλογής...'
+            selectPresetPlaceholder: 'Επιλογή προεπιλογής...',
+            footerPrivacy: 'Πολιτική Απορρήτου',
+            footerTerms: 'Όροι Χρήσης',
+            footerContact: 'Επικοινωνία',
+            footerCopyright: '© 2024 MC AI Γεννήτρια Εντολών. Με την επιφύλαξη παντός δικαιώματος. Δεν σχετίζεται με τη Mojang Studios.'
         },
         content: {
             contentTitle: 'Τι είναι η Γεννήτρια Εντολών Minecraft;',
@@ -2606,6 +2666,12 @@ function updateUIText() {
     // Update OP Items button
     safeSetText('opItemsBtn', t.opItemsBtn);
     safeSetText('opItemsTitle', t.opItemsTitle);
+
+    // Footer Links
+    safeSetText('footerPrivacy', t.footerPrivacy);
+    safeSetText('footerTerms', t.footerTerms);
+    safeSetText('footerContact', t.footerContact);
+    safeSetText('footerCopyright', t.footerCopyright);
 
     // Update item select
     const itemSelect = document.getElementById('itemSelect');
