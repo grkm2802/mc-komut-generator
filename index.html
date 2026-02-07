@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Komut Oluşturucu</title>
+    <meta name="description"
+        content="Minecraft Komut Oluşturucu ile en güçlü kılıçları, kazmaları ve diğer eşyaları kolayca tasarlayın. 1.21 ve tüm sürümlerle uyumlu, Türkçe ve ücretsiz.">
+    <meta name="keywords"
+        content="minecraft komut oluşturucu, minecraft give komutu, minecraft kılıç yapma, minecraft op eşya, minecraft 1.21 komutları, command generator">
+    <meta name="author" content="MC AI">
+    <link rel="stylesheet" href="style.css">
+    <!-- AdSense Auto Ads Code -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3340862866066600"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <div class="header-controls">
+                    <div class="language-selector">
+                        <label for="languageSelect">🌐</label>
+                        <select id="languageSelect" class="language-input">
+                            <option value="tr">Türkçe</option>
+                            <option value="en" selected>English</option>
+                            <option value="de">Deutsch</option>
+                            <option value="es">Español</option>
+                            <option value="fr">Français</option>
+                            <option value="it">Italiano</option>
+                            <option value="pt">Português</option>
+                            <option value="ru">Русский</option>
+                            <option value="ja">日本語</option>
+                            <option value="ko">한국어</option>
+                            <option value="zh">中文</option>
+                            <option value="pl">Polski</option>
+                            <option value="nl">Nederlands</option>
+                            <option value="sv">Svenska</option>
+                            <option value="el">Ελληνικά</option>
+                        </select>
+                    </div>
+                    <div class="theme-selector">
+                        <label for="themeSelect">🎨</label>
+                        <select id="themeSelect" class="language-input">
+                            <option value="dark">🌙 Koyu</option>
+                            <option value="light">☀️ Açık</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <h1 id="headerTitle">⚔️ Minecraft Komut Oluşturucu</h1>
+            <p class="subtitle" id="headerSubtitle">Eşya komutlarını kolayca oluşturun</p>
+        </header>
+
+        <!-- Top Ad Unit -->
+        <div class="ad-container ad-top">
+            <div class="ad-placeholder">Reklam Alanı (Top Banner)</div>
+        </div>
+
+        <main>
+            <div class="form-section">
+                <h3 id="presetsTitle">Kaydedilenler (Presets)</h3>
+                <div class="form-group">
+                    <div class="presets-row">
+                        <input type="text" id="presetName" placeholder="Preset İsmi..." style="flex: 2;">
+                        <button type="button" id="savePresetBtn" class="add-enchant-btn"
+                            style="flex: 1;">Kaydet</button>
+                    </div>
+                    <div class="preset-controls">
+                        <select id="presetSelect" style="flex: 2;">
+                            <option value="">Bir kayıt seçin...</option>
+                        </select>
+                        <button type="button" id="loadPresetBtn" class="add-enchant-btn" style="flex: 1;">Yükle</button>
+                        <button type="button" id="deletePresetBtn" class="remove-enchant">Sil</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3 id="displaySettingsTitle">Görünüm Ayarları</h3>
+
+                <div class="form-group">
+                    <label for="customName" id="customNameLabel">Eşya İsmi</label>
+                    <div class="name-style-wrapper">
+                        <input type="text" id="customName" placeholder="Örn: Ejderha Kılıcı" style="flex: 2;">
+                        <select id="nameColor" style="flex: 1; min-width: 100px;">
+                            <option value="">Varsayılan</option>
+                            <option value="white" style="color:white; background:#333;">Beyaz</option>
+                            <option value="red" style="color:#FF5555; background:#333;">Kırmızı</option>
+                            <option value="dark_red" style="color:#AA0000; background:#333;">Koyu Kırmızı</option>
+                            <option value="gold" style="color:#FFAA00; background:#333;">Altın</option>
+                            <option value="green" style="color:#55FF55; background:#333;">Yeşil</option>
+                            <option value="dark_green" style="color:#00AA00; background:#333;">Koyu Yeşil</option>
+                            <option value="aqua" style="color:#55FFFF; background:#333;">Açık Mavi</option>
+                            <option value="dark_aqua" style="color:#00AAAA; background:#333;">Koyu Mavi</option>
+                            <option value="blue" style="color:#5555FF; background:#333;">Mavi</option>
+                            <option value="dark_blue" style="color:#0000AA; background:#333;">Lacivert</option>
+                            <option value="light_purple" style="color:#FF55FF; background:#333;">Pembe</option>
+                            <option value="dark_purple" style="color:#AA00AA; background:#333;">Mor</option>
+                            <option value="yellow" style="color:#FFFF55; background:#333;">Sarı</option>
+                            <option value="gray" style="color:#AAAAAA; background:#333;">Gri</option>
+                            <option value="dark_gray" style="color:#555555; background:#333;">Koyu Gri</option>
+                            <option value="black" style="color:#000000; background:#ccc;">Siyah</option>
+                        </select>
+                    </div>
+                    <div class="style-toggles">
+                        <label class="checkbox-container" style="flex: 0;">
+                            <input type="checkbox" id="nameBold">
+                            <span class="checkmark"></span>
+                            <span class="checkbox-text" id="boldLabel" style="font-weight: bold;">Kalın (Bold)</span>
+                        </label>
+                        <label class="checkbox-container" style="flex: 0;">
+                            <input type="checkbox" id="nameItalic">
+                            <span class="checkmark"></span>
+                            <span class="checkbox-text" id="italicLabel" style="font-style: italic;">İtalik</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="customLore" id="customLoreLabel">Açıklama (Lore)</label>
+                    <textarea id="customLore" rows="3"
+                        placeholder="Her satır yeni bir açıklama satırı olur..."></textarea>
+                </div>
+            </div>
+
+
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="itemSelect" id="itemSelectLabel">Eşya Seçin</label>
+                    <input type="text" id="itemSearch" class="search-input" placeholder="🔍 Ara..."
+                        style="margin-bottom: 5px;">
+                    <select id="itemSelect">
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="versionSelect" id="versionSelectLabel">Oyun Sürümü</label>
+                    <select id="versionSelect" class="select-input">
+                        <option value="old">1.20.4 ve Altı</option>
+                        <option value="new">1.20.5 ve Üstü</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantityInput" id="quantityInputLabel">Miktar</label>
+                    <input type="number" id="quantityInput" value="1" min="1" max="64">
+                </div>
+
+                <div class="form-group half">
+                    <label for="targetSelect" id="targetSelectLabel">Hedef</label>
+                    <div class="target-wrapper" style="display: flex; gap: 10px;">
+                        <select id="targetSelect">
+                            <option value="@s">@s (Kendisi)</option>
+                            <option value="@p">@p (En Yakın)</option>
+                            <option value="@a">@a (Herkes)</option>
+                            <option value="@e">@e (Tüm Varlıklar)</option>
+                            <option value="@r">@r (Rastgele)</option>
+                            <option value="custom">Özel İsim...</option>
+                        </select>
+                        <input type="text" id="targetName" placeholder="Oyuncu İsmi" style="display: none; flex: 1;">
+                    </div>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="unbreakable">
+                        <span class="checkmark"></span>
+                        <span class="checkbox-text" id="unbreakableLabel">Kırılmaz (Unbreakable)</span>
+                    </label>
+                </div>
+
+
+                <div class="form-group">
+                    <label id="enchantmentsLabel">Büyüler (Enchantments)</label>
+                    <div class="enchantments-container">
+                        <div class="enchantment-item">
+                            <select class="enchant-select">
+                            </select>
+                            <div class="enchant-level-wrapper">
+                                <input type="number" class="enchant-level" min="1" max="10" value="1"
+                                    id="enchantLevelPlaceholder" placeholder="Seviye">
+                                <span class="max-level-info" style="display: none;"></span>
+                            </div>
+                            <button type="button" class="remove-enchant" onclick="removeEnchantment(this)">×</button>
+                        </div>
+                    </div>
+                    <button type="button" class="add-enchant-btn" id="addEnchantBtn" onclick="addEnchantment()">+ Büyü
+                        Ekle</button>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="silentMode" class="checkbox-input">
+                        <span class="checkbox-text" id="silentModeText">🔇 Sessiz Mod</span>
+                        <span class="checkbox-hint" id="silentModeHint">Komut chat'te görünmeyecek</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Middle Ad Unit -->
+            <div class="ad-container ad-middle">
+                <div class="ad-placeholder">Reklam Alanı (Content Banner)</div>
+            </div>
+
+            <div class="output-section">
+                <div class="output-header">
+                    <h2 id="outputTitle">Oluşturulan Komut</h2>
+                    <button type="button" class="copy-btn" id="copyBtn" onclick="copyCommand()">📋 Kopyala</button>
+                </div>
+                <textarea readonly id="commandOutput" class="command-output" spellcheck="false"
+                    placeholder="Komut burada görünecek..."></textarea>
+            </div>
+
+            <div class="op-items-section">
+                <button type="button" class="op-items-btn" id="opItemsBtn" onclick="showOPItems()">⚡ OP Eşyalar (Master
+                    Set)</button>
+                <div class="op-items-container" id="opItemsContainer" style="display: none;">
+                    <div class="op-items-header">
+                        <h3 id="opItemsTitle">⚡ En Güçlü Eşya Seti</h3>
+                        <button type="button" class="close-op-btn" onclick="hideOPItems()">×</button>
+                    </div>
+                    <div class="op-items-list" id="opItemsList">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Section for SEO -->
+            <section class="content-section" style="margin-top: 40px; color: var(--text-secondary);">
+                <article>
+                    <h2>Minecraft Komut Oluşturucu Nedir?</h2>
+                    <p>
+                        Bu araç, Minecraft oyuncularının karmaşık <strong>/give</strong> komutlarını saniyeler içinde
+                        oluşturmasını sağlar.
+                        Artık komut blokları veya sohbet penceresinde uzun kodlar yazmakla uğraşmanıza gerek yok.
+                        İster <strong>1.21</strong> sürümü için netherite kılıç yapın, ister <strong>1.8</strong> için
+                        elmas setler;
+                        MC AI Komut Oluşturucu tüm ihtiyaçlarınıza cevap verir.
+                    </p>
+
+                    <h3>Özellikler</h3>
+                    <ul>
+                        <li>✨ <strong>Özel İsimlendirme ve Lore:</strong> Eşyalarınıza renkli isimler ve açıklamalar
+                            ekleyin.</li>
+                        <li>🔥 <strong>Sınırsız Büyüleme:</strong> Keskinlik 1000, Verimlilik 32767 gibi vanilla
+                            sınırlarının ötesine geçin.</li>
+                        <li>🛡️ <strong>Kırılmazlık:</strong> Asla kırılmayan "Unbreakable" eşyalar yapın.</li>
+                        <li>⚡ <strong>OP Eşya Setleri:</strong> Hazır "Master Set" ile tek tıkla en güçlü eşyalara sahip
+                            olun.</li>
+                        <li>🌍 <strong>Çoklu Dil Desteği:</strong> Türkçe, İngilizce, Almanca ve 10+ dilde kullanın.
+                        </li>
+                    </ul>
+
+                    <h3>Minecraft'ta Nasıl OP Kılıç Yapılır?</h3>
+                    <p>
+                        1. <strong>Eşya Seçin:</strong> Listeden "Elmas Kılıç" veya "Netherite Kılıç" seçin.<br>
+                        2. <strong>Büyü Ekleyin:</strong> "Keskinlik" (Sharpness) seçin ve seviyeyi 255 (veya daha
+                        yüksek) yapın.<br>
+                        3. <strong>Kırılmaz Yapın:</strong> "Kırılmaz" kutucuğunu işaretleyin.<br>
+                        4. <strong>Kopyalayın:</strong> Oluşturulan komutu kopyalayın ve oyunda komut bloğuna
+                        yapıştırın.
+                    </p>
+                </article>
+            </section>
+
+        </main>
+
+        <!-- Bottom Ad Unit -->
+        <div class="ad-container ad-bottom">
+            <div class="ad-placeholder">Reklam Alanı (Bottom Banner)</div>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="privacy.html">Gizlilik Politikası</a> |
+                <a href="terms.html">Kullanım Şartları</a> |
+                <a href="contact.html">İletişim</a>
+            </div>
+            <p>&copy; 2024 MC AI Command Generator. All rights reserved. Not affiliated with Mojang Studios.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

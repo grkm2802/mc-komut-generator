@@ -1,0 +1,750 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #0f0f0f;
+    --bg-secondary: #1a1a1a;
+    --bg-tertiary: #252525;
+    --bg-hover: #2d2d2d;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --accent: #4a9eff;
+    --accent-hover: #5baaff;
+    --accent-dark: #3a8eef;
+    --border: #333;
+    --border-light: #404040;
+    --success: #4caf50;
+    --danger: #f44336;
+    --shadow: rgba(0, 0, 0, 0.5);
+
+    /* Input Variables - Dark Default */
+    --input-bg: #2d2d2d;
+    --input-text: #ffffff;
+    --input-border: #444;
+}
+
+/* Light Theme */
+body.light-theme {
+    --bg-primary: #f5f5f5;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f0f0f0;
+    --bg-hover: #e8e8e8;
+    --text-primary: #1a1a1a;
+    --text-secondary: #666666;
+    --accent: #4a9eff;
+    --accent-hover: #5baaff;
+    --accent-dark: #3a8eef;
+    --border: #ddd;
+    --border-light: #ccc;
+    --success: #4caf50;
+    --danger: #f44336;
+    --shadow: rgba(0, 0, 0, 0.1);
+
+    /* Input Variables - Light Mode */
+    --input-bg: #ffffff;
+    --input-text: #1a1a1a;
+    --input-border: #ccc;
+}
+
+/* Make static text unselectable for app-like feel */
+h1,
+h2,
+h3,
+h4,
+.subtitle,
+label,
+.checkbox-text,
+.checkbox-hint,
+.max-level-info {
+    user-select: none;
+    cursor: default;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, var(--bg-primary) 0%, #1a1a2e 100%);
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.light-theme {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--bg-secondary);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px var(--shadow);
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+header {
+    background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+    padding: 40px 30px;
+    text-align: center;
+    border-bottom: 2px solid var(--border);
+    position: relative;
+}
+
+.header-top {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.language-selector,
+.theme-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.language-selector label {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.language-input {
+    padding: 6px 12px;
+    background: var(--bg-tertiary);
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.language-input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(74, 158, 255, 0.1);
+}
+
+.language-input:hover {
+    border-color: var(--border-light);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, var(--accent) 0%, #6bb6ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+main {
+    padding: 30px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group.half {
+    /* Style specifically for half-width or special grouping if needed */
+}
+
+.target-wrapper input[type="text"],
+.search-input,
+.select-input,
+.number-input,
+.enchant-select,
+.enchant-level,
+select,
+#presetSelect,
+#itemSelect,
+#quantityInput,
+textarea,
+#presetName,
+#customName,
+#customLore,
+#targetName {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: var(--input-bg) !important;
+    color: var(--input-text) !important;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.target-wrapper input[type="text"]:focus,
+.search-input:focus,
+.select-input:focus,
+.number-input:focus,
+.enchant-select:focus,
+.enchant-level:focus,
+select:focus,
+#presetSelect:focus,
+#itemSelect:focus,
+#quantityInput:focus,
+textarea:focus,
+#presetName:focus,
+#customName:focus,
+#customLore:focus,
+#targetName:focus {
+    outline: none;
+    border-color: #00ff41;
+    /* Bambu Lab Green */
+    box-shadow: 0 0 0 2px rgba(0, 255, 65, 0.2);
+}
+
+.search-input {
+    margin-bottom: 8px;
+}
+
+/* Specific overrides if needed */
+/* Fix for Select Options and Optgroups */
+select option,
+select optgroup {
+    background-color: var(--input-bg) !important;
+    color: var(--input-text) !important;
+}
+
+/* Removed redundant style block - covered by Master Fix */
+
+.enchantments-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.enchantment-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    /* Align top so inputs match even if height differs */
+}
+
+/* Removed redundant block */
+
+.remove-enchant {
+    width: 36px;
+    height: 36px;
+    background: var(--danger);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: 0;
+    padding: 0;
+}
+
+.enchant-level-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.max-level-info {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    position: absolute;
+    bottom: -18px;
+    left: 2px;
+    white-space: nowrap;
+}
+
+.remove-enchant:hover {
+    background: #d32f2f;
+    transform: scale(1.05);
+}
+
+.add-enchant-btn {
+    padding: 10px 20px;
+    background: var(--accent);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.add-enchant-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 158, 255, 0.3);
+}
+
+.checkbox-group {
+    margin-top: 20px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    padding: 15px;
+    background: var(--bg-tertiary);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.checkbox-label:hover {
+    border-color: var(--border-light);
+    background: var(--bg-hover);
+}
+
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 2px;
+    accent-color: var(--accent);
+}
+
+.checkbox-text {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.checkbox-hint {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 4px;
+    font-weight: normal;
+}
+
+.output-section {
+    background: var(--bg-tertiary);
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px solid var(--border);
+}
+
+.output-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.output-header h2 {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+}
+
+.copy-btn {
+    padding: 8px 16px;
+    background: var(--accent);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.copy-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 158, 255, 0.3);
+}
+
+.copy-btn:active {
+    transform: translateY(0);
+}
+
+.command-output {
+    background: #1a1a1a;
+    /* Even darker for readonly */
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 16px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    color: #a0a0a0;
+    /* Muted text */
+    word-break: break-all;
+    min-height: 80px;
+    width: 100%;
+    line-height: 1.6;
+    resize: none;
+    cursor: default;
+    user-select: all;
+    display: block;
+}
+
+.command-output:focus {
+    outline: none;
+    border-color: #555;
+    /* Subtle focus */
+}
+
+/* Dropdown color options style fix */
+select option {
+    background: #2d2d2d;
+    color: white;
+}
+
+.command-output::placeholder {
+    color: var(--text-secondary);
+    font-style: italic;
+    opacity: 1;
+    /* Firefox fix */
+}
+
+.command-output .placeholder {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.op-items-section {
+    margin-top: 30px;
+}
+
+.op-items-btn {
+    width: 100%;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    box-shadow: 0 4px 15px rgba(238, 90, 111, 0.3);
+}
+
+.op-items-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(238, 90, 111, 0.4);
+}
+
+.op-items-btn:active {
+    transform: translateY(0);
+}
+
+.op-items-container {
+    margin-top: 20px;
+    background: var(--bg-tertiary);
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px solid var(--border);
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.op-items-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--border);
+}
+
+.op-items-header h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.close-op-btn {
+    width: 32px;
+    height: 32px;
+    background: var(--danger);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: 0;
+}
+
+.close-op-btn:hover {
+    background: #d32f2f;
+    transform: scale(1.1);
+}
+
+.op-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.op-item-card {
+    background: var(--bg-secondary);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.op-item-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(74, 158, 255, 0.1);
+}
+
+.op-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.op-item-header h4 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin: 0;
+    font-weight: 600;
+}
+
+.op-copy-btn {
+    padding: 6px 14px;
+    background: var(--accent);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.op-copy-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-1px);
+}
+
+.op-command-output {
+    background: var(--bg-primary);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: var(--accent);
+    word-break: break-all;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.op-item-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.op-item-description strong {
+    color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .enchantment-item {
+        flex-wrap: wrap;
+    }
+
+    .enchant-level-wrapper {
+        width: 100%;
+    }
+
+    .enchant-level {
+        width: 100%;
+    }
+
+    .output-header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .copy-btn {
+        width: 100%;
+    }
+
+    .op-item-header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .op-copy-btn {
+        width: 100%;
+    }
+}
+
+/* UI Improvements for Advanced Features */
+.name-style-wrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.style-toggles {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.presets-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.preset-controls {
+    display: flex;
+    gap: 10px;
+}
+
+#savePresetBtn {
+    background: var(--success);
+}
+
+#savePresetBtn:hover {
+    background: #27ae60;
+}
+
+#deletePresetBtn {
+    width: auto;
+    padding: 0 15px;
+    font-size: 1rem;
+}/* Basic Ad Styles */
+.ad-container {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px; /* Layout Shift Protection */
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px dashed var(--border);
+}
+
+.ad-placeholder {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: var(--accent);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+/* Content Section Styles */
+.content-section {
+    background: var(--bg-tertiary);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.content-section h2 {
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.content-section h3 {
+    color: var(--text-primary);
+    margin: 25px 0 15px;
+    font-size: 1.4rem;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.content-section ul {
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
+
+.content-section li {
+    margin-bottom: 10px;
+}
+
+.content-section strong {
+    color: var(--accent);
+}
+
