@@ -2695,6 +2695,31 @@ function updateUIText() {
         showOPItems();
     }
 
+
+    // Policy Page Handling
+    const langTr = document.getElementById('lang-tr');
+    const langEn = document.getElementById('lang-en');
+
+    if (langTr && langEn) {
+        if (currentLanguage === 'tr') {
+            langTr.style.display = 'block';
+            langEn.style.display = 'none';
+        } else {
+            langTr.style.display = 'none';
+            langEn.style.display = 'block';
+        }
+    }
+
+    // Back to Home Link Translation
+    const backLinks = document.querySelectorAll('.subtitle a');
+    backLinks.forEach(link => {
+        if (currentLanguage === 'tr') {
+            link.textContent = '← Ana Sayfaya Dön';
+        } else {
+            link.textContent = '← Back to Home';
+        }
+    });
+
     // Helper to update specific dropdown options
     const updateSelectOptions = (selectId, translationKey, prefix = '') => {
         const select = document.getElementById(selectId);
