@@ -3111,7 +3111,7 @@ function convertCommandToNewFormat(oldCommand) {
 function showOPItems() {
     const container = document.getElementById('opItemsContainer');
     const list = document.getElementById('opItemsList');
-    const items = opItemsCommands[currentLanguage];
+    const items = opItemsCommands[currentLanguage] || opItemsCommands['en'];
     const versionFormat = versionSelect ? versionSelect.value : 'old';
 
     list.innerHTML = '';
