@@ -1,40 +1,29 @@
 # Minecraft Komut Oluşturucu (MC AI Command Generator)
 
-**[Canlı Demo](https://mc-ai-generator.com)** *(Buraya kendi URL'nizi ekleyin)*
+**[Canlı Demo](https://mc-ai-generator.vercel.app)** *(Eğer yayına aldıysanız)*
 
-Minecraft için gelişmiş `/give` komutları oluşturmanızı sağlayan web tabanlı bir araç. 1.21 ve eski sürümleri destekler.
+Bu proje, Minecraft için gelişmiş komutlar oluşturmanızı sağlayan özel bir araçtır.
 
-## Özellikler
+## Kurulum (Sadece Yetkili Kullanıcılar)
 
-*   ⚔️ **OP Eşyalar:** Keskinlik 1000 gibi vanilla sınırlarını aşan büyüler ekleyin.
-*   🛡️ **Kırılmazlık:** Eşyaları kırılmaz yapın.
-*   🎨 **Özelleştirme:** Eşya isimlerini ve açıklamalarını (lore) renkli yazılarla düzenleyin.
-*   🌍 **Çoklu Dil:** Türkçe, İngilizce, Almanca ve daha fazlası.
-*   📱 **Mobil Uyumlu:** Telefon ve tabletlerde sorunsuz çalışır.
+Bu repo **PRIVATE (Özel)** olduğu için erişim izniniz olmalıdır.
 
-## Kurulum
-
-Bu projeyi kendi bilgisayarınızda çalıştırmak için:
-
-1.  Bu depoyu klonlayın:
+1.  Projeyi indirin:
     ```bash
-    git clone https://github.com/KULLANICI_ADI/REPO_ADI.git
+    git clone https://github.com/grkm2802/mc-komut-generator.git
     ```
-2.  Klasöre gidin:
+2.  Klasöre girin:
     ```bash
-    cd REPO_ADI
+    cd mc-komut-generator
     ```
 3.  `index.html` dosyasını tarayıcınızda açın.
 
-## Kullanılan Teknolojiler
+## Güncelleme
 
-*   HTML5
-*   CSS3 (Modern Variables & Flexbox)
-*   JavaScript (Vanilla)
+Yeni değişiklikleri almak için projenin olduğu klasörde şu komutu çalıştırın:
+```bash
+git pull origin main
+```
 
 ## Lisans
-
-Bu proje [MIT](LICENSE) lisansı ile lisanslanmıştır.
-
----
-*Not: Bu araç Mojang Studios ile bağlantılı değildir.*
+Bu proje özel mülkiyettir. İzinsiz kopyalanamaz veya dağıtılamaz.
