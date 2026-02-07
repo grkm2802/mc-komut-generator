@@ -45,6 +45,21 @@ const translations = {
             versionOld: '1.20.4 ve Altı',
             versionNew: '1.20.5 ve Üstü'
         },
+        content: {
+            contentTitle: 'Minecraft Komut Oluşturucu Nedir?',
+            contentDesc: 'Bu araç, Minecraft oyuncularının karmaşık <strong>/give</strong> komutlarını saniyeler içinde oluşturmasını sağlar. Artık komut blokları veya sohbet penceresinde uzun kodlar yazmakla uğraşmanıza gerek yok. İster <strong>1.21</strong> sürümü için netherite kılıç yapın, ister <strong>1.8</strong> için elmas setler; MC AI Komut Oluşturucu tüm ihtiyaçlarınıza cevap verir.',
+            featuresTitle: 'Özellikler',
+            feature1: '✨ <strong>Özel İsimlendirme ve Lore:</strong> Eşyalarınıza renkli isimler ve açıklamalar ekleyin.',
+            feature2: '🔥 <strong>Sınırsız Büyüleme:</strong> Keskinlik 1000, Verimlilik 32767 gibi vanilla sınırlarının ötesine geçin.',
+            feature3: '🛡️ <strong>Kırılmazlık:</strong> Asla kırılmayan "Unbreakable" eşyalar yapın.',
+            feature4: '⚡ <strong>OP Eşya Setleri:</strong> Hazır "Master Set" ile tek tıkla en güçlü eşyalara sahip olun.',
+            feature5: '🌍 <strong>Çoklu Dil Desteği:</strong> Türkçe, İngilizce, Almanca ve 10+ dilde kullanın.',
+            guideTitle: 'Minecraft\'ta Nasıl OP Kılıç Yapılır?',
+            guideStep1: '1. <strong>Eşya Seçin:</strong> Listeden "Elmas Kılıç" veya "Netherite Kılıç" seçin.',
+            guideStep2: '2. <strong>Büyü Ekleyin:</strong> "Keskinlik" (Sharpness) seçin ve seviyeyi 255 (veya daha yüksek) yapın.',
+            guideStep3: '3. <strong>Kırılmaz Yapın:</strong> "Kırılmaz" kutucuğunu işaretleyin.',
+            guideStep4: '4. <strong>Kopyalayın:</strong> Oluşturulan komutu kopyalayın ve oyunda komut bloğuna yapıştırın.'
+        },
         itemGroups: {
             weapons: 'Silahlar',
             tools: 'Aletler',
@@ -176,6 +191,21 @@ const translations = {
             versionSelectLabel: 'Game Version',
             versionOld: '1.20.4 and Below',
             versionNew: '1.20.5 and Above'
+        },
+        content: {
+            contentTitle: 'What is Minecraft Command Generator?',
+            contentDesc: 'This tool allows Minecraft players to generate complex <strong>/give</strong> commands in seconds. No need to struggle with long codes in command blocks or chat. Whether you are making a netherite sword for version <strong>1.21</strong> or diamond sets for <strong>1.8</strong>; MC AI Command Generator answers all your needs.',
+            featuresTitle: 'Features',
+            feature1: '✨ <strong>Custom Naming and Lore:</strong> Add colorful names and descriptions to your items.',
+            feature2: '🔥 <strong>Unlimited Enchantments:</strong> Go beyond vanilla limits like Sharpness 1000, Efficiency 32767.',
+            feature3: '🛡️ <strong>Unbreakable:</strong> Make "Unbreakable" items that never break.',
+            feature4: '⚡ <strong>OP Item Sets:</strong> Get the strongest items with a single click using "Master Set".',
+            feature5: '🌍 <strong>Multi-Language Support:</strong> Use in Turkish, English, German, and 10+ languages.',
+            guideTitle: 'How to Make an OP Sword in Minecraft?',
+            guideStep1: '1. <strong>Select Item:</strong> Choose "Diamond Sword" or "Netherite Sword" from the list.',
+            guideStep2: '2. <strong>Add Enchantment:</strong> Select "Sharpness" and set the level to 255 (or higher).',
+            guideStep3: '3. <strong>Make Unbreakable:</strong> Check the "Unbreakable" box.',
+            guideStep4: '4. <strong>Copy:</strong> Copy the generated command and paste it into a command block in the game.'
         },
         itemGroups: {
             weapons: 'Weapons',
@@ -2290,6 +2320,30 @@ function updateUIText() {
         const el = document.getElementById(id);
         if (el) el.placeholder = text || '';
     };
+
+    // Helper for safe HTML update
+    const safeSetHTML = (id, html) => {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = html || '';
+    };
+
+    // Update Content Section (SEO Text)
+    const content = translations[currentLanguage].content || translations['en'].content;
+    if (content) {
+        safeSetText('contentTitle', content.contentTitle);
+        safeSetHTML('contentDesc', content.contentDesc);
+        safeSetText('featuresTitle', content.featuresTitle);
+        safeSetHTML('feature1', content.feature1);
+        safeSetHTML('feature2', content.feature2);
+        safeSetHTML('feature3', content.feature3);
+        safeSetHTML('feature4', content.feature4);
+        safeSetHTML('feature5', content.feature5);
+        safeSetText('guideTitle', content.guideTitle);
+        safeSetHTML('guideStep1', content.guideStep1);
+        safeSetHTML('guideStep2', content.guideStep2);
+        safeSetHTML('guideStep3', content.guideStep3);
+        safeSetHTML('guideStep4', content.guideStep4);
+    }
 
     safeSetText('headerTitle', t.headerTitle);
     safeSetText('headerSubtitle', t.headerSubtitle);
